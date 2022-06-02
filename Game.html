@@ -1,0 +1,68 @@
+<a href="Index.html"> Game </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body style="background: orange;";></body>
+    <title> Random Name Gusser </title>
+</head>
+<body style="background-color: lightcyan;">
+
+  <div class="pos"><input id="clickMe" type="button" value="Generate Random Team Name" onclick="generateName();" /></div>
+  
+  <h2 id="random team"></h2>
+  <style>
+ div.pos {
+position: absolute;
+top: 50%;
+left: 45%;
+ }
+  </style>
+<div class="toe">
+  <script> 
+    function capFirst(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+ 
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    function generateName(){
+      var first_name = ["Manchester City ","Manchester United ","Arsenal","Real", "Chelsea", "Liverpool","Spurs", "Psg", "Bayern", "AC milan", "Juve", "Inter", "Barca"];
+
+      var last_name = ["St","RW","LW","Cm","Cdm","Cam","Lb","Rb","Cb","Gk"];
+
+     var name = capFirst(first_name[getRandomInt(0, first_name.length + 1)]) + ' ' + capFirst(last_name[getRandomInt(0, last_name.length + 1)]);
+        document.getElementById("random team").innerHTML = name;
+    }
+  </script>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Whats in the box </h2>
+
+<p>Look in the box for more information.</p>
+
+<div>To the right of the box you can see a button called genrate random team name you click it with a mouse and then you look above this and then the box above you can see the team names and the position next to it .</div>
+
+</body>
+</html>
+
+
+
+ 
